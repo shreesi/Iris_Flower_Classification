@@ -1,0 +1,30 @@
+<html lang="en" dir="ltr">
+
+  <body bgcolor='lightblue'>
+
+    <h1 align='center'>PREDICTION</h1>
+
+    <div align = 'center'>
+
+    {%if data == 0%}
+    <h1>Iris-setosa</h1>
+    <img src="iris_s.jpg" alt="Iris-setosa" height="300" width="300">
+
+    {%elif data == 1%}
+    <h1>Iris-versicolor</h1>
+    <img src="iris_vers.jpg" alt="Iris-versicolor">
+
+    {% else %}
+    <h1>Iris-virginica</h1>
+    <img src="iris_virg.jpg" alt="Iris-virginica">
+
+    {% endif %}
+
+    <br><br>
+
+    <a href="/"> Home Page </a>
+
+  </div>
+
+  </body>
+</html>
